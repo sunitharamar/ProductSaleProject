@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">  -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 align="center"> Total Sales Revenue By Product</h1>      
+  </div>
+ 
+  <p align="center"> Franganzia cleaners, spray and wipes are company's most revenue generating products</p>      
+</div>
+
+  <div class="container text-center">
+        <div class="row">    
+                <div class="chart">                
+                    <form>
+                    <label><input type="radio" name="dataset" id="dataset" value="total" checked>Monthly</label>
+                    <label><input type="radio" name="dataset" id="dataset" value="option1">Weekly</label>
+                    <p>Current Month/Week data</p>    
+                    </form>
+                      
+                </div>
+             
+        </div>            
+    </div>  
+    
+    <div class="container">
+        <div class="row">    
+                <div class="chart2">                
+                  
+                    <p> Isn't this a beautiful chart?  Copyright @ Orion Corp - Sunitha's company</p>      
+                </div>
+         
+        </div>            
+    </div>                
+
+<!--<script type="text/javascript" src="{{ url_for('static', filename='js/mybar_Neha.js')}}"></script> -->
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/indexbar_Neha.js')}}"></script>
+
+
+</body>
+</html>

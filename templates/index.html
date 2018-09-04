@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sales Dashboard </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+ <link href="{{ url_for('static', filename='css/mdb.min.css') }}" rel="stylesheet" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dc.css') }}"/>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+
+
+ <style>
+  body, html {
+     height:100%;
+     margin:0;
+     padding:0;
+  }
+  div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+ </style>
+</head>
+<body class="fixed-sn light-blue-skin">
+<header>
+        <div class="container">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primanry justify-content-center">
+
+   
+                        <ul class="nav nav-tabs">
+                         <li class="nav-item">
+                             <a class="nav-link active" href="#">Home</a>
+                         </li>
+                        </ul>
+                         
+                <ul class="nav justify-content-end">
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sales DashBoard</a>
+              
+                <div class="dropdown-menu dropdown-primary">
+                    <a class="dropdown-item" href="/inner/index_Products-Categories.html">Products Monthly/Weekly % Sold </a>
+                    <a class="dropdown-item" href="/products/index_TopBottom-Products.html">Products</a>
+                    <a class="dropdown-item" href="/combine/index_Sales-per-Product.html">Sales Per Product</a>
+                    <a class="dropdown-item" href="/pivotdemo/indexpivottable.html">Pivot Table Demo</a>
+                </div>
+                      </li>
+                       <li class="nav-item">
+                              <a class="nav-link" href="data.html">Data</a>
+                       </li>
+                 </ul>  
+                  <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                 </form>
+
+     
+     </nav>
+     </div>
+
+ 
+
+</header>
+
+<div class="container">
+
+<div class="row">
+    <div class="column" id="BuType">
+        <h2> # of Sales Transactions Per BU for 2 Quarters</h2>
+    </div>
+  
+   <div class="column" id="SaleType">
+      <h2> Total Sales Per BU </h2>
+    </div>
+
+</div>
+
+
+<div class="row">
+    <div class="column" id="PieType">
+        <h2> Total Sales Per BU </h2>
+    </div>
+  
+   <div class="column" id="BubbleType">
+      <h2> Sold Units (200+) Vs Unit Price </h2>
+    </div>
+
+</div>
+<div class="row">
+  <!--
+    <div class="column" id="ScatterType">
+        <h2> Total Sales Per BU </h2>
+    </div>
+  -->
+   <div class="column" id="BarType">
+      <h2> Sales Per BU </h2>
+    </div>
+    
+    <div class="column" id="ScatterType">
+        <h2> Sold Units Vs Total Sales </h2>
+    </div>
+
+</div>
+
+</div>
+<!--<div id="chart"></div>-->
+ <!--<table id="sale-table"></table> -->
+
+  <!-- Our JS -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/d3.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/crossfilter.js')}}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/dc.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/colorbrewer.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/app_rajat.js')}}"></script> 
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>
+</body>
+</html>
